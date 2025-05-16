@@ -21,6 +21,7 @@ export async function GET(
         category: true,
         size: true,
         color: true,
+        discount: true,
       },
     })
 

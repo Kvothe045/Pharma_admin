@@ -29,7 +29,7 @@ const DashboardPage: React.FC<DashboardPageProps> = async ({ params }) => {
         <Separator />
 
         <div className="grid gap-4 grid-cols-3">
-          <Card>
+          {/* <Card>
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
               <CardTitle className="text-sm font-medium">
                 Total revenue
@@ -42,7 +42,7 @@ const DashboardPage: React.FC<DashboardPageProps> = async ({ params }) => {
                 {formatter.format(totalRevenue)}
               </div>
             </CardContent>
-          </Card>
+          </Card> */}
 
           <Card>
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
@@ -68,7 +68,7 @@ const DashboardPage: React.FC<DashboardPageProps> = async ({ params }) => {
             </CardContent>
           </Card>
         </div>
-        <Card className="col-span-4">
+        {/* <Card className="col-span-4">
           <CardHeader>
             <CardTitle>Overview</CardTitle>
           </CardHeader>
@@ -76,7 +76,7 @@ const DashboardPage: React.FC<DashboardPageProps> = async ({ params }) => {
           <CardContent className="pl-2">
             <Overview data={graphRevenue} />
           </CardContent>
-        </Card>
+        </Card> */}
       </div>
     </div>
   )

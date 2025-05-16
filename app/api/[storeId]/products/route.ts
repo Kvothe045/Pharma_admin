@@ -105,6 +105,8 @@ export async function GET(
     const colorId = searchParams.get('colorId') || undefined
     const sizeId = searchParams.get('sizeId') || undefined
     const isFeatured = searchParams.get('isFeatured')
+    const discountId = searchParams.get('discountId') || undefined; // Add discount filter
+
 
     if (!params.storeId) {
       return new NextResponse('Missing storeId', { status: 400 })
@@ -116,6 +118,7 @@ export async function GET(
         categoryId,
         colorId,
         sizeId,
+        discountId,
         isFeatured: isFeatured ? true : undefined,
         isArchived: false,
       },
@@ -124,6 +127,7 @@ export async function GET(
         category: true,
         color: true,
         size: true,
+        discount: true,
       },
       orderBy: {
         createdAt: 'desc',
