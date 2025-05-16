@@ -19,8 +19,8 @@ const DiscountsPage = async ({
 
   // 2) Infer the type of a single element:
   type DiscountWithProducts = Awaited<
-    ReturnType<typeof prismadb.discount.findMany>
-  >[number];
+  ReturnType<typeof prismadb.discount.findUnique>
+> & { products: any[] };
 
   // 3) Now `item` is fully typed:
   const formattedDiscounts: DiscountColumn[] = (discounts as DiscountWithProducts[]).map(
