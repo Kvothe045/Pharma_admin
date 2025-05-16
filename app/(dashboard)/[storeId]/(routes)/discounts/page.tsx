@@ -1,5 +1,7 @@
 import { format } from "date-fns";
+
 import prismadb from "@/lib/prismadb";
+
 import { DiscountClient } from "./components/client";
 import { DiscountColumn } from "./components/columns";
 

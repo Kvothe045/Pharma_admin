@@ -1,8 +1,10 @@
 'use client'
 
 import { HTMLAttributes } from 'react'
+
 import Link from 'next/link'
 import { useParams, usePathname } from 'next/navigation'
+
 import { cn } from '@/lib/utils'
 
 export function MainNav({ className, ...props }: HTMLAttributes<HTMLElement>) {
